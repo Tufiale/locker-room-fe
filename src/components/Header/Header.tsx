@@ -1,5 +1,5 @@
 import "../Header/Header.scss";
-import LockerRoomHeader from "../../assets/images/Locker-Room-Header.png";
+import LockerRoomHeader from "../../LockerRoomHeader.png";
 
 const Header = () => {
   return (
