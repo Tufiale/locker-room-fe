@@ -5,6 +5,7 @@ import Nav from "./components/Nav/Nav";
 import Homepage from "./containers/Hompage/Homepage";
 import PlayersPage from "./containers/PlayersPage/PlayersPage";
 import EditPlayer from "./containers/EditPlayer/EditPlayer";
+import AddPlayer from "./containers/AddPlayer/AddPlayer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<Homepage />} />
         <Route path="/players" element={<PlayersPage />} />
         <Route path="/players/:id" element={<EditPlayer />} />
+        <Route path="/players/create" element={<AddPlayer />} />
       </Routes>
     </HashRouter>
   );

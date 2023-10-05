@@ -1,0 +1,25 @@
+* {
+  text-decoration: none;
+  font-family: monospace;
+}
+
+.player-card {
+  background-color: #fff;
+  border: 1px solid #9ca8bd;
+  border-radius: 20px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+
+  max-height: 380px;
+  text-align: center;
+  color: #222831;
+
+  &__image {
+    width: auto;
+    height: 120px;
+  }
+}

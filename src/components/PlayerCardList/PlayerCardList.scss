@@ -1,0 +1,8 @@
+.player-container {
+  display: grid;
+  width: 80%;
+  margin: 5vh auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 3vw;
+  gap: 4vw;
+}
