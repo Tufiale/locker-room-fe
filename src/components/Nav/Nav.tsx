@@ -11,11 +11,11 @@ const Nav = () => {
         <img src={homeicon} alt="home icon" className="nav__image" />
       </Link>
 
-      <Link to="/viewPlayers">
+      <Link to="/players">
         <img src={playericon} alt="player icon" className="nav__image" />
       </Link>
 
-      <Link to="/addPlayers">
+      <Link to="/players/create">
         <img src={addplayericon} alt="stadium icon" className="nav__image" />
       </Link>
     </nav>
