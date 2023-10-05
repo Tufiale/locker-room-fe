@@ -1,9 +1,21 @@
 .edit-player__buttons {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  padding-top: 25px;
+  gap: 10px;
+  margin-left: 45vw;
+  margin-top: 1vw;
 }
 
-.edit-player__button {
+.edit-player__button--delete,
+.edit-player__button--update {
+  background: #3498db;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background: #2980b9;
+  }
 }

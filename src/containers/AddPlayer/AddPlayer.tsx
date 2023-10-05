@@ -39,7 +39,6 @@ const AddPlayer = () => {
 
   return (
     <section className="add-player">
-      <h2 className="add-player__title">Add Your Own Player</h2>
       <Form
         handleSubmit={handleSubmit}
         defaultFormState={defaultFormState}
