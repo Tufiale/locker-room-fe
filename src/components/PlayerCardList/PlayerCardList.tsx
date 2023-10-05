@@ -12,7 +12,7 @@ const PlayerCardList = ({ players }: PlayerCardListProps) => {
     <>
       <section className="player-container">
         {players.map((player) => (
-          <Link key={player.player_id} to={`/player/edit/${player.player_id}`}>
+          <Link key={player.player_id} to={`/players/${player.player_id}`}>
             <PlayerCard
               firstName={player.first_name}
               lastName={player.last_name}

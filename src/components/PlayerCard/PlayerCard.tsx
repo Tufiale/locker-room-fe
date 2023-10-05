@@ -40,7 +40,6 @@ const PlayerCard = ({
             <h4 className="player-card__jerseyNumber">
               Shirt Number: {jerseyNumber}
             </h4>
-            h
           </div>
         </div>
       </section>
