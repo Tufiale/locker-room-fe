@@ -1,25 +1,65 @@
-* {
-  text-decoration: none;
-  font-family: monospace;
-}
+// * {
+//   text-decoration: none;
+//   font-family: monospace;
+// }
+
+// .player-card {
+//   background-color: #fff;
+//   border: 1px solid #9ca8bd;
+//   border-radius: 20px;
+//   padding: 20px;
+//   display: grid;
+//   grid-template-columns: 1fr;
+//   justify-items: center;
+//   align-items: center;
+//   align-content: center;
+
+//   max-height: 380px;
+//   text-align: center;
+//   color: #222831;
+
+//   &__image {
+//     width: auto;
+//     height: 120px;
+//   }
+// }
 
 .player-card {
-  background-color: #fff;
-  border: 1px solid #9ca8bd;
-  border-radius: 20px;
+  background-color: #f9f9f9;
+  border: 2px solid #2c3e50;
+  border-radius: 10px;
   padding: 20px;
-  display: grid;
-  grid-template-columns: 1fr;
-  justify-items: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  align-content: center;
-
-  max-height: 380px;
   text-align: center;
-  color: #222831;
+  color: #2c3e50;
+  max-width: 300px;
+  margin: 20px;
 
-  &__image {
-    width: auto;
-    height: 120px;
+  .player-card__image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .player-card__name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+
+  .player-card__clubName {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .player-card__position,
+  .player-card__nationality,
+  .player-card__jerseyNumber {
+    font-size: 0.9em;
+    margin-bottom: 10px;
   }
 }

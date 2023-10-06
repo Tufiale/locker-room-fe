@@ -8,6 +8,7 @@ const EditPlayer = () => {
   const [player, setPlayer] = useState<playerTypeResponse | undefined>(
     undefined
   );
+  // const [showForm, setShowForm] = useState(false);
 
   const { id } = useParams();
   const navigate = useNavigate();
@@ -36,9 +37,28 @@ const EditPlayer = () => {
     }
   };
 
+  // const getPlayerForm = (player: playerTypeResponse) => {
+  //   return{
+  //     player_id: player.player_id,
+  //     first_name: player.first_name,
+  //     last_name: player.last_name,
+  //     pitch_position: player.pitch_position,
+  //     jersey_number: player.jersey_number,
+  //     player_image_url: player.player_image_url,
+  //     nationality: player.nationality,
+  //     club_id: player.club_id
+  //   }
+  // }
+
+  // const handleEditPlayerForm = () => {
+  //   setShowForm(!showForm);
+  // };
+
   useEffect(() => {
     getPlayersById(Number(id));
   }, []);
+
+  // const playerDefaults: playerTypeRequest | undefined = player ? getPlayerForm(player) : undefined;
 
   if (!player) return null;
 
@@ -49,8 +69,14 @@ const EditPlayer = () => {
         <button className="edit-player__button--delete" onClick={handleDelete}>
           Delete
         </button>
-        <button className="edit-player__button--update">Update</button>
+        <button
+          className="edit-player__button--update"
+          // onClick={handleEditPlayerForm}
+        >
+          Update
+        </button>
       </div>
+      {/* {showForm &&} */}
     </div>
   );
 };

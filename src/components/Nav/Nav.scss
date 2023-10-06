@@ -1,13 +1,20 @@
 .nav {
   display: flex;
   height: 6vh;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   background-color: #e80c2c;
-  margin-top: -5px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #9c0c20;
+  margin-top: -4px;
+}
 
-  &__image {
-    height: 4rem;
-    justify-content: space-between;
-  }
+.nav__image {
+  height: 2rem;
+  width: auto;
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav__image:hover {
+  transform: scale(2.1);
 }
