@@ -17,10 +17,10 @@ This project was completed over a week and included the task of creating a back-
 
 - onInput is a React event attribute that triggers whenever there is new input in the associated input field.
 
-(event) => handleInput(event, "first_name") is an arrow function that gets executed whenever the onInput event is triggered. It calls the handleInput function and passes two arguments:
+- (event) => handleInput(event, "first_name") is an arrow function that gets executed whenever the onInput event is triggered. It calls the handleInput function and passes two arguments:
 
-event: The event object containing information about the input event.
-"first_name": A string representing the key (property) that needs to be updated in the player state.
-handleInput function updates the state of the player by using setPlayer to merge the existing player state with the new value of the input field. The key being updated is specified by the string passed ("first_name", "last_name", etc.).
+- event: The event object containing information about the input event.
+  "first_name": A string representing the key (property) that needs to be updated in the player state.
+  handleInput function updates the state of the player by using setPlayer to merge the existing player state with the new value of the input field. The key being updated is specified by the string passed ("first_name", "last_name", etc.).
 
 In summary, onInput event is used to call the handleInput function and update the respective property of the player state whenever the user types or modifies content in the input fields.
