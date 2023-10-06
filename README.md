@@ -1,28 +1,26 @@
-# React + TypeScript + Vite
+# Locker-Room FullStack Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Locker-Room is a database of premier league players featuring information created in tables from MySQL.
 
-Currently, two official plugins are available:
+This project was completed over a week and included the task of creating a back-end database that interacts with the front-end to bring you the latest data regarding the current players.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- View Player Data: Access and view detailed information about Premier League players.
+- Create Your Player: Create and add a new player to the database with the desired details.
+- Search Functionality: Search and filter through player data to find specific players based on various criteria.
+- Delete Player Data: Remove a player's data from the database.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Code-Snippets
 
-- Configure the top-level `parserOptions` property like this:
+![Screenshot1](src/codeSnippet.png)
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- onInput is a React event attribute that triggers whenever there is new input in the associated input field.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
-# locker-room-fe
+(event) => handleInput(event, "first_name") is an arrow function that gets executed whenever the onInput event is triggered. It calls the handleInput function and passes two arguments:
+
+event: The event object containing information about the input event.
+"first_name": A string representing the key (property) that needs to be updated in the player state.
+handleInput function updates the state of the player by using setPlayer to merge the existing player state with the new value of the input field. The key being updated is specified by the string passed ("first_name", "last_name", etc.).
+
+In summary, onInput event is used to call the handleInput function and update the respective property of the player state whenever the user types or modifies content in the input fields.

@@ -3,9 +3,7 @@ import "../Hompage/Homepage.scss";
 const Homepage = () => {
   return (
     <section className="homepage">
-      <h1 className="homepage__header">
-        Welcome to the Premier League Player Hub!
-      </h1>
+      <h1 className="homepage__header">Welcome to The Locker-Room</h1>
       <br />
       <h3 className="homepage__body--one">
         Are you a die-hard football fan eager to delve into the world of Premier

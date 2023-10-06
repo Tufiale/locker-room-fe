@@ -30,7 +30,7 @@ const PlayerCard = ({
               className="player-card__image"
             />
             <h1 className="player-card_name">{`${firstName} ${lastName}`}</h1>
-            <h3 className="player-card__clubName">Club: {clubName}</h3>
+            <h3 className="player-card__clubName">{clubName}</h3>
           </div>
           <div className="player-card__main">
             <h4 className="player-card__position">Position: {position}</h4>
